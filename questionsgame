@@ -1,0 +1,59 @@
+
+
+name = input("What is your name? ")
+print ("Hi,", name)
+age = input("How old are you? ")
+print ("You are", age, "years old. Great!")
+hobby = input("What is your hobby? ")
+print ("That's a great hobby,", name, "!")
+job = input("What is your job? ")
+print ("You are a", job, "and you are", age, "years old. That's impressive!")
+
+while True:
+    continue_choice = input("Do you want to continue? (yes/no): ")
+    if continue_choice.lower() == "yes":
+        print("Great! Let's continue.")
+        break
+    elif continue_choice.lower() == "no":
+        print("Okay, have a nice day!")
+        break
+    else:
+        print("Invalid input. Please enter 'yes' or 'no'.")
+
+place = input("Where do you live? ")
+print ("You live in", place, "and", place, "is a wonderful place!")
+if place.lower() == "baku":
+    print("Baku is a beautiful city!")
+
+city = input("Do you like your city? ")
+if city.lower() == "yes":
+    print("That's great to hear!")
+else:
+    print("I understand.")
+
+alone = input("Do you like being alone? ")
+if alone.lower() == "yes":
+    print("Being alone can be peaceful and refreshing.")
+else:
+    print("It's nice to have company sometimes.")
+
+game = input("Do you like playing games? ")
+if game.lower() == "yes":   
+    print("Playing games can be a lot of fun!")
+else:
+    print("That's okay, everyone has different interests.")
+
+question = input("would you like to play a game? (yes/no): ")
+if question.lower() == "yes":
+    print("Great! Let's play a game.")
+else:
+    print("No problem! Maybe next time.")
+
+if question.lower() == "yes":
+    print("You are in a dark forest. You see two paths ahead. Left leads to forest, and the other leads to village. Which path do you choose? (left/right): ")
+    if input().lower() == "left":
+        print("You walk into the forest and find a treasure chest! You win!")
+    else:
+        print("You walk to the village and find a friendly villager who gives you a map. You win!")
+
+
